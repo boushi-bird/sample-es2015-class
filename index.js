@@ -18,9 +18,14 @@ var m = new Message('Hello!');
 m.show();
 // Hello!
 
-var show = m.show;
+var show = m.show.bind(m);
 show();
-// [TypeError: Cannot read property 'message' of undefined]
+// Hello!
 
-setTimeout(m.show, 0);
-// undefined
+setTimeout(m.show.bind(m), 0);
+// Hello!
+
+setTimeout(() => {
+  m.show();
+}, 0);
+// Hello!
