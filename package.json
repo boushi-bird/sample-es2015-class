@@ -1,0 +1,25 @@
+{
+  "name": "sample-es2015-class",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "static-server",
+    "eslint": "eslint ."
+  },
+  "author": "boushi-bird <boushi-bird@users.noreply.github.com>",
+  "license": "ISC",
+  "private": true,
+  "engines": {
+    "node": ">=4.3.0",
+    "npm": ">=3.5.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.5.0",
+    "eslint-config-google": "^0.6.0",
+    "static-server": "^2.0.3"
+  }
+}
