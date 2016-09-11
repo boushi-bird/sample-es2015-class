@@ -3,6 +3,7 @@
 class Message {
   constructor(message) {
     this.message = message;
+    this.show = this.show.bind(this);
   }
   show() {
     try {
@@ -20,7 +21,7 @@ m.show();
 
 var show = m.show;
 show();
-// [TypeError: Cannot read property 'message' of undefined]
+// Hello!
 
 setTimeout(m.show, 0);
-// undefined
+// Hello!
